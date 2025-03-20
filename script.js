@@ -36,15 +36,16 @@ copyBtn.addEventListener("click", () => {
     .catch((err) => console.log("Failed to copy the quote", err));
 });
 // logic for exporting the quote
+  // WE ARE USING BLOB API TO EXPORT THE QUOTE
+
 function exportQuote() {
   const content = `Quote: ${quote.textContent}\n\nAuthor: ${quoteAuthor.textContent}`;
-  // WE ARE USING BLOB API TO EXPORT THE QUOTE
   const blob = new Blob([content], { type: "text/plain" });
   const blobUrl = URL.createObjectURL(blob); 
   console.log(blobUrl);
 
   // providing dummy link
-  const link = document.createElement("d"); 
+  const link = document.createElement("a"); 
   link.href = blobUrl;
   link.download = "Quote.txt";
   document.body.appendChild(link); 
