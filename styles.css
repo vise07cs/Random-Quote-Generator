@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  
+}
+
+.container {
+  background-color: #22222218;
+  padding: 20px 10px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow:  0 0 15px 5px rgb(206, 224, 7);
+}
+
+.quote-box {
+  padding: 80px;
+}
+
+#quote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0d100;
+  font-family: cursive;
+}
+
+#quote-author {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #a2a0a0;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  background-color: #333; /* Dark gray for contrast */
+  color: #fff; /* White text */
+}
+#new-quote {
+  background: #346b38;
+  color: white;
+}
+#copy {
+  background: #f86205;
+  color: white;
+}
+#twitter {
+  background: #1befef;
+  color: rgba(0, 0, 0, 0.895);
+}
+#export {
+  background: #d400ff;
+  color: white;
+}
+button:hover {
+  opacity: 0.8;
+}
